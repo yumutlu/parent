@@ -12,9 +12,16 @@ export default defineConfig({
         child1: "http://localhost:3001/assets/remoteEntry.js",
         child2: "http://localhost:3002/assets/remoteEntry.js",
       },
-      shared: ["react", "react-dom"],
+      shared: {
+        react: { singleton: true, requiredVersion: "^19.1.1" },
+        "react-dom": { singleton: true, requiredVersion: "^19.1.1" },
+        // Mantine kütüphaneleri paylaşımdan kaldırıldı
+      },
     }),
   ],
+  resolve: {
+    dedupe: ["react", "react-dom"],
+  },
   server: {
     port: 3000,
   },

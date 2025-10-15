@@ -7,12 +7,9 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "preview": "vite preview --port 5000"
+    "preview": "vite preview --port 3000"
   },
   "dependencies": {
-    "@mantine/core": "^8.3.5",
-    "@mantine/hooks": "^8.3.5",
-    "@mantine/nprogress": "^8.3.5",
     "@originjs/vite-plugin-federation": "^1.4.1",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
