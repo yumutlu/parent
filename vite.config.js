@@ -15,7 +15,7 @@ export default defineConfig({
       shared: {
         react: { singleton: true, requiredVersion: "^19.1.1" },
         "react-dom": { singleton: true, requiredVersion: "^19.1.1" },
-        // Mantine kütüphaneleri paylaşımdan kaldırıldı
+        // Mantine kütüphaneleri paylaşımdan kaldırıldı cunku parent'de kullanılmıyor child1 ve child2'de kullanılıyor
       },
     }),
   ],
